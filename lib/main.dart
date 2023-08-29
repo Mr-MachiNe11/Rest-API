@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rest_api/screen/another_screen.dart';
 import 'package:rest_api/screen/home_screen.dart';
 import 'package:rest_api/screen/second_screen.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SecondScreen(),
+      home: const AnotherScreen(),
     );
   }
 }
