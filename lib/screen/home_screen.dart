@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Rest Api'),
+        title: const Text('Rest Api'),
       ),
       body: Column(
         children: [
@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
               future: getApi(),
               builder: (context, snapshot) {
                 if (!snapshot.hasData) {
-                  return Text("Loading");
+                  return const Text("Loading");
                 } else {
                   return ListView.builder(
                     itemCount: postList.length,
