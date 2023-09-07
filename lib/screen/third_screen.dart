@@ -73,23 +73,25 @@ class _ThirdScreenState extends State<ThirdScreen> {
                                           .toString()),
                               ReusableRow(
                                   title: 'More Address',
-                                  value: snapshot.data![index].address!.geo!.lat.toString() +
+                                  value: snapshot.data![index].address!.geo!.lat
+                                          .toString() +
                                       ", " +
                                       snapshot.data![index].address!.geo!.lng
                                           .toString()),
                               ReusableRow(
                                   title: 'More Address',
-                                  value: snapshot.data![index].address!.geo!.lat.toString() +
+                                  value: snapshot.data![index].address!.geo!.lat
+                                          .toString() +
                                       ", " +
                                       snapshot.data![index].address!.geo!.lng
                                           .toString()),
                               ReusableRow(
                                   title: 'Company',
-                                  value: snapshot.data![index].company!.name.toString() +
+                                  value: snapshot.data![index].company!.name
+                                          .toString() +
                                       ", " +
                                       snapshot.data![index].company!.bs
                                           .toString()),
-
                             ],
                           ),
                         ),
@@ -130,19 +132,3 @@ class ReusableRow extends StatelessWidget {
     );
   }
 }
-class AddressInfo extends StatelessWidget {
-  final List<String> addressInfo;
-
-  const AddressInfo({super.key, required this.addressInfo});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: addressInfo.map((info) {
-        return Text(info);
-      }).toList(),
-    );
-  }
-}
-

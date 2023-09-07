@@ -3,6 +3,7 @@ import 'package:rest_api/screen/another_screen.dart';
 import 'package:rest_api/screen/home_screen.dart';
 import 'package:rest_api/screen/second_screen.dart';
 import 'package:rest_api/screen/third_screen.dart';
+import 'package:rest_api/screen/fourth_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const ThirdScreen(),
+      home: const FourthScreen(),
     );
   }
 }
